@@ -8,7 +8,7 @@ for i in x:
    count=count+1
 print(count)
 
-#2.    Create a list of size 5 and execute the slicing structure
+#2.Create a list of size 5 and execute the slicing structure
 
 
 x= [1,2,3,4,"rahul"]
@@ -19,7 +19,7 @@ print(x[0:5:2])
 
 """
 
-#3. 	Create a list of given structure and run
+#3.Create a list of given structure and run
 
 Access list [1, 2, 3, 4]
 Access list [600,  700]
@@ -43,15 +43,15 @@ print([])
 
 #4 Create a list of thousand number using range and xrange and see the difference between each other.
 
-#First of all xrange doesnt exist in python3.
-#The difference is that range returns a Python list object and xrange returns an xrange object.
+First of all xrange doesnt exist in python3.
+The difference is that range returns a Python list object and xrange returns an xrange object.
 
-#5. 	How Tuple is beneficial as compare to the list?
+#5.How Tuple is beneficial as compare to the list?
 
-#Tuples are stored in a single block of memory. Tuples are immutalbe so, It doesn't require extraspace to store new objects.
-#We can use tuples in a dictionary as a key but it's not possible with lists
+Tuples are stored in a single block of memory. Tuples are immutalbe so, It doesn't require extraspace to store new objects.
+We can use tuples in a dictionary as a key but it's not possible with lists
 
-#6. 	Write a program in Python to iterate through the list of numbers in the range of 1,100 and print the number which is divisible by 3 and a multiple of 2.
+#6.Write a program in Python to iterate through the list of numbers in the range of 1,100 and print the number which is divisible by 3 and a multiple of 2.
 
 y=[]
 for x in range(1,100):
@@ -133,7 +133,7 @@ while (len(y_even)+5) < (len(y_even)+6) :
     count=count+1
 
 print(y_even)
-
+print(x_odd)
 
 """
 11. Write a program to find out the occurrence of a specific word from an alphanumeric statement. 
@@ -162,7 +162,7 @@ print("c: " + str(x.count("c")))
 
 
 
-#12. Generate and print another tuple whose values are even numbers in the given tuple (1,2,3,4,5,6,7,8,9,10).
+#12.Generate and print another tuple whose values are even numbers in the given tuple (1,2,3,4,5,6,7,8,9,10).
 
 def func_tup(x):
     y=[]
@@ -170,10 +170,7 @@ def func_tup(x):
         if i%2==0:
             y.append(i)
     print(tuple(y))
-
-
 x= (1,2,3,4,5,6,7,8,9,10)
-
 func_tup(x)
 
 
