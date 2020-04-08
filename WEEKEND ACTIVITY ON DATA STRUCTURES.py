@@ -1,3 +1,4 @@
+
 # 1 Create a list of the 10 elements of four different types of Data Type like int, string, complex and float.
 
 x= [1,2,3,4,"rahul","mohan",7.9,8.9,9.9,9+1j]
@@ -163,9 +164,16 @@ print("c: " + str(x.count("c")))
 
 #12. Generate and print another tuple whose values are even numbers in the given tuple (1,2,3,4,5,6,7,8,9,10).
 
+def func_tup(x):
+    y=[]
+    for i in x:
+        if i%2==0:
+            y.append(i)
+    print(tuple(y))
+
+
 x= (1,2,3,4,5,6,7,8,9,10)
-y=[]
-for i in x:
-    if i%2==0:
-        y.append(i)
-print(tuple(y))
+
+func_tup(x)
+
+
