@@ -72,15 +72,17 @@ print(b)
 
 
 
-def xxx(x,y):
+def func_sum(x,y):
     sum=int(x)+int(y)
     print(sum)
-xxx("2","3")
+func_sum("2","3")
 
-def xxx(x,y):
+or.....
+
+def func_sum(x,y):
     sum=(x)+(y)
     print(sum)
-xxx("2","3")
+func_sum("2","3")
 
 """
 7. Define a function that can accept two strings as input and print the string with maximum length in console.
@@ -102,13 +104,13 @@ length_of_string("rahull","singh")
 
 #8. Define a function which can generate and print a tuple where the value are square of numbers between 1 and 20.
 
-def xx(x,y):
+def func_tup(x,y):
     z=[]
     for i in range(x,y):
         z.append(i**2)
     print(tuple(z))
 
-xx(2,20)
+func_tup(2,20)
 
 """
 9. Write a function called showNumbers that takes a parameter called limit.
@@ -119,7 +121,6 @@ Example: If the limit is 3 , it should print:
 2 EVEN
 3 ODD
 """
-
 
 def showNumbers(limit):
     for i in range(0,limit):
@@ -144,10 +145,10 @@ def find_even(x,y):
 find_even(1,21)
 
 """
-11. 	Write a program which can map() and filter() to make a list whose elements are square of even number in [1,2,3,4,5,6,7,8,9,10]
+11.Write a program which can map() and filter() to make a list whose elements are square of even number in [1,2,3,4,5,6,7,8,9,10]
 Hints: Use map() to generate a list.
-     	     Use filter() to filter elements of a list
-            Use lambda to define anonymous functions
+Use filter() to filter elements of a list
+Use lambda to define anonymous functions
 """
 def fun_map_filter(d):
     l = list(filter(lambda x:x%2==0,d))
@@ -157,9 +158,7 @@ def fun_map_filter(d):
 
 fun_map_filter([1,2,3,4,5,6,7,8,9,10])
 
-#12. 	Write a function to compute 5/0 and use try/except to catch the exceptions
-
-
+#12.Write a function to compute 5/0 and use try/except to catch the exceptions
 
 def fun_try_catch(x,y):
     try:
@@ -173,20 +172,16 @@ fun_try_catch(5,0)
 
 
 
-#13. 	Flatten the list [[1,2,3].,[4,5],[6,7,8]] into [1,2,3,4,5,6,7,8] using reduce Goal : Turn [1,2,3,4,5,6,7] to 1234567
+#13. Flatten the list [[1,2,3].,[4,5],[6,7,8]] into [1,2,3,4,5,6,7,8] using reduce Goal : Turn [1,2,3,4,5,6,7] to 1234567
 
 
 from functools import reduce
-
-
 given_list = [[1,2,3],[4,5,6],[7,8,9]] #List to be flattened
-
 flat_list = reduce(lambda z,y:z + y, given_list)
-
 print("Original List:",given_list)
 print("Flattened List:",flat_list)
 
-#14. 	What is the output of the following codes:
+#14.What is the output of the following codes:
 #(i)
 def foo():
     try:
