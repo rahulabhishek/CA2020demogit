@@ -56,12 +56,10 @@ print(pl)
 
 #3. Write a program in Python find out the character in a string which is uppercase using list comprehension.
 
-x=['raHuL Singh']
-y= str(x)
-
-list_upper = [ letter for letter in y if letter.isupper()]
+x=input("Enter the string :")
+#y= str(x)
+list_upper = [ letter for letter in x if letter.isupper()]
 print(list_upper)
-
 
 #4. Write a program to construct a dictionary from the two lists containing the names of students and their 
    #corresponding subjects. The dictionary should maps the students with their respective subjects. 
