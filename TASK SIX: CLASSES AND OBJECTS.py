@@ -1,4 +1,4 @@
-"""1.	Write a program that calculates and prints the value according to the given formula:
+1.	Write a program that calculates and prints the value according to the given formula:
 Q= Square root of [(2*C*D)/H]
 Following are the fixed values of C and H:
 C is 50. H is 30.
