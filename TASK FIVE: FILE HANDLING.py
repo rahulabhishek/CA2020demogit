@@ -1,6 +1,6 @@
 #1.	Write a program in Python to allow the error of syntax to go in exception. HINT: use SyntaxError
 
-def jj(x):
+def syntax_func (x):
     try:
         print(x/0
     except SyntaxError:
@@ -9,7 +9,7 @@ def jj(x):
         print("The 'try except' is finished")
 
 
-jj(5)
+syntax_func(5)
 
 #2. Write a program in Python to allow user to open a file by using argv module. If the entered name is incorrect throw
 # an exception and ask them to enter the name again. Make sure to use read only mode.
@@ -33,8 +33,37 @@ while True:
           pass
      finally:
           pass
-#4. 	Create a login page backend to ask user to enter the UserEmail and password. Make sure to ask Re-Type Password and if the password is incorrect give chance to enter it again but it should not be more than 3 times.
-#5. 	https://www.programiz.com/python-programming/exception-handling Go through this link to understand Finally and Raise concept.
+	      
+#4. 	Create a login page backend to ask user to enter the UserEmail and password.
+	Make sure to ask Re-Type Password and if the password is incorrect give chance to enter it again but it should not 
+	be more than 3 times.
+	      
+
+def login_page():
+    UserEmail = input("Enter you Useremail: ")
+    password = input("Enter your password: ")
+    stored_password = "1234"
+    #stored_UserEmail ="rahul@gmail.com"
+    count=0
+    if password !="1234":
+        print("Incorrect Password,Re-Type Password")
+        while count<3:
+            password = input("Enter your password: ")
+            if password != "1234":
+                print("Incorrect Password,Re-Type Password")
+                count=count+1
+            else:
+                print("log in SucessFull")
+    else:
+        print("Login Sucessfull")
+	      
+#5. 	https://www.programiz.com/python-programming/exception-handling Go through this link to understand Finally and
+	      Raise concept.
+	      
+The finally keyword is used in try...except blocks. It defines a block of code to run when the try...except...else block is final.
+The finally block will be executed no matter if the try block raises an error or not.
+
+The raise keyword is used to raise an exception.You can define what kind of error to raise, and the text to print to the user.
 
 #6. 	Read any file using Python File handling concept and return only the even length string from the doc.txt file.
 """"
