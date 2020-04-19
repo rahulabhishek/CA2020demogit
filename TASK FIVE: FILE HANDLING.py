@@ -11,9 +11,8 @@ def syntax_func (x):
 
 syntax_func(5)
 
-#2. Write a program in Python to allow user to open a file by using argv module. If the entered name is incorrect throw
-# an exception and ask them to enter the name again. Make sure to use read only mode.
-
+#2.
+	      
 import sys
 
 def func_fileOpen():
@@ -33,8 +32,7 @@ func_fileOpen()
 
 
 
-#3.Write a program to handle an error if the user entered the number more than four digits it should return
-# “Please length is too short/long !!! Please provide only four digits”
+#3.
 
 while True:
      user_input = input("Enter the number: ")
@@ -49,9 +47,7 @@ while True:
      finally:
           pass
 	      
-#4. 	Create a login page backend to ask user to enter the UserEmail and password.
-	Make sure to ask Re-Type Password and if the password is incorrect give chance to enter it again but it should not 
-	be more than 3 times.
+#4. 
 	      
 
 def login_page():
@@ -80,16 +76,8 @@ The finally block will be executed no matter if the try block raises an error or
 
 The raise keyword is used to raise an exception.You can define what kind of error to raise, and the text to print to the user.
 
-#6. 	Read any file using Python File handling concept and return only the even length string from the doc.txt file.
-""""
-Consider the content as:
-	Hello I am a file
-	Where you need to return the data string
-	Which is of even length
-	Make sure you return the content in
-	The same link as it is present.
-"""
-
+#6. 
+	      
 file_open = open('doc','r')
 file_string=[]
 file_length=[]
