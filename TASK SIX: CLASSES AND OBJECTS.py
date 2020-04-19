@@ -1,13 +1,7 @@
-1.	Write a program that calculates and prints the value according to the given formula:
-Q= Square root of [(2*C*D)/H]
-Following are the fixed values of C and H:
-C is 50. H is 30.
-D is the variable whose values should be input to your program in a comma-separated sequence.
+#1.
 
 import math
 import numpy
-
-
 
 def func_fm(x):
     C=50
@@ -18,12 +12,7 @@ def func_fm(x):
 func_fm([20,30])
 
 
-
-2. Define a class named Shape and its subclass Square. The Square class has an init function which takes a length as argument.
-Both classes have an area function which can print the area of the shape where Shape’s area is 0 by default.
-
-
-
+#2. 
 class Shape(object):
     def __init__(self):
        pass
@@ -54,11 +43,7 @@ y=Rectangle(7,9)
 y.func_area()
 
 
-3.Create a class to find the three elements that sum to zero from a set of n real numbers.
-Input array: [-25,-10,-7,-3,2,4,8,10]
-Output: [[-10,2,8],[-7,-3,10]]
-
-
+#3.
 
 class ddd(object):
 
@@ -70,8 +55,6 @@ class ddd(object):
 
 t= [-25,-10,-7,-3,2,4,8,10]
 a= ddd(t)
-
-
 
 
 #4. What is the output of the following code? Explain your answer as well.
@@ -104,8 +87,6 @@ main()
 
 
 #Output will be (1 2) since  "der" class is using  the super() function to inherit the init function from the A class ( here x = 1 and y=2)
-
-
 
 class A:
     def __init__(self,x):
@@ -156,13 +137,7 @@ obj = B()
 
 
 
-5.Create a Time class and initialize it with hours and minutes.
-Make a method addTime which should take two time object and add them. E.g.- (2 hour and 50 min)+(1 hr and 20 min) is (4 hr and 10 min)
-Make a method displayTime which should print the time.
-Make a method DisplayMinute which should display the total minutes in the Time. E.g.- (1 hr 2 min) should display 62 minute.
-
-
-
+#5.
 class Time():
     def __init__(self, hours, mins):
         self.hours = hours
@@ -183,23 +158,15 @@ class Time():
         print("Total mins in time: ",round((self.hours * 60)))
 
 
-
 x = Time(2,50)
 y = Time(1,20)
 z = Time.addTime(x,y)
 z.displayTime()
 z.displayMinute()
 
-"""
-6.Write a Person class with an instance variable, , and a constructor that takes an integer, , as a parameter.
-# The constructor must assign  to  after confirming the argument passed as  is not negative; if a negative argument is passed as ,
-#  the constructor should set  to  and print Age is not valid, setting age to 0.. In addition, you must write the following instance methods:
-#yearPasses() should increase the  instance variable by .
-#amIOld() should perform the following conditional actions:
-#If , print You are young..
-#If  and , print You are a teenager..
-#Otherwise, print You are old..
-"""
+
+#6.
+
 class Person:
     def __init__(self,age):
         self.age=age
