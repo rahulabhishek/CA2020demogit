@@ -7,8 +7,8 @@ for i in x:
    count=count+1
 print(count)
 
-#2.Create a list of size 5 and execute the slicing structure
 
+#2.Create a list of size 5 and execute the slicing structure
 
 x= [1,2,3,4,"rahul"]
 
