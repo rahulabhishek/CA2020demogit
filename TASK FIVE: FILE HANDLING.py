@@ -14,7 +14,22 @@ syntax_func(5)
 #2. Write a program in Python to allow user to open a file by using argv module. If the entered name is incorrect throw
 # an exception and ask them to enter the name again. Make sure to use read only mode.
 
+import sys
 
+def func_fileOpen():
+    try:
+
+        filename = str(sys.argv[0])
+        txt_file = open(filename, 'r')
+        print(txt_file)
+
+    except:
+
+        filename = input('Exception:  Entered name is incorrect,Please enter the name again.')
+        txt_file  = open(filename, 'r')
+        print(txt_file )
+
+func_fileOpen()
 
 
 
