@@ -34,7 +34,7 @@ print(numbers1)
 
 
 
-# 2.Write a program in Python to  multiple the element of list by itself using traditional function and 
+#2.Write a program in Python to  multiple the element of list by itself using traditional function and 
     #pass the function to map to complete the operation.
 
 #Using lambda and map..........
@@ -110,7 +110,7 @@ print (list(reversed_iterator(iter)))
 
 
 #7. Write any example on decorators.
-
+"""
 Decorators are very powerful and useful tool in Python since it allows programmers to modify the behavior of function or class. 
 Decorators allow us to wrap another function in order to extend the behavior of wrapped function, without permanently modifying it.
 In Decorators, functions are taken as the argument into another function and then called inside the wrapper function.
@@ -118,10 +118,17 @@ In Decorators, functions are taken as the argument into another function and the
 @gfg_decorator
 def hello_decorator(): 
     print("Gfg") 
-  
+ """
 
-#8. Learn about What is FRONT END and its Technologies and Tools
-#Make sure to mention at least 5 top notch technologies of Frontend.
-#Also mentioned the name of companies using those 5 technologies individually
+#8. 
+"""
+The front end of a website is the part that users interact with. 
+Everything that you see when you’re navigating around the Internet, from fonts and colors to dropdown menus and sliders, 
+is a combo of HTML, CSS, and JavaScript being controlled by your computer’s browser
 
-
+Some of the Front-end development technologies include:
+Angular :YouTube TV
+React :Asana, Slack, Udemy
+Backbone.js : Uber, Pinterest, and reddit
+knockout :Handshake
+"""
