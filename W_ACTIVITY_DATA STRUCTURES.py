@@ -99,17 +99,8 @@ for i in x:
 print(z)
 
 
-"""
-10. Write a program in Python to complete the following task:
-Create two different list as in even_list and odd_list
-Ask user to enter the number in the range of 1,50 and make sure if the entered number is even append it to the even_list and 
-if the entered number is odd append it to the odd list.
-Keep that in mind you can only add 5 items in each list
-Make sure once you entered the total 5 element calculate the sum of the list and return the maximum out of the list.
-    elif (user_input)%2!= 0:
-        x_odd.append((user_input))
-"""
 
+#10. 
 y_even= [2,4,6,8,10]
 x_odd= [1,3,5,7,9]
 
@@ -135,10 +126,9 @@ while (len(y_even)+5) < (len(y_even)+6) :
 print(y_even)
 print(x_odd)
 
-"""
-11. Write a program to find out the occurrence of a specific word from an alphanumeric statement. 
-Example: 12abcbacbaba344ab Output: a=5 b=5 c=2 make sure you should avoid the numbers in you logic
-"""
+
+#11. 
+
 x = '12abcbacbaba344ab'
 z= list(x)
 y=[]
