@@ -1,20 +1,8 @@
-"""
-1. 	Write a program to reverse a string.
-Sample data: “1234abcd”
-Expected Output: “dcba4321”
-"""
-
+#1.
 x = '1234abcd'
 print("\""+(x[::-1])+"\"")
 
-
-"""
-2. 	Write a function that accepts a string and calculate the number of uppercase letters and lowercase letters.
-Expected Output:
-No. of Upper case characters : 3
-No. of Lower case Characters : 12
-
-"""
+#2. 
 def count_ul():
     x = input("enter the string: ")
     count1=0
@@ -52,17 +40,8 @@ def func_sort_words(x):
 func_sort_words("rahul-aingh")
 
 
-"""
-5. Write a program that accepts a sequence of lines as input and prints the lines after making all characters in the sentence capitalized.
-Sample input:
-Hello world
-Practice makes perfect
 
-Expected Output:
-HELLO WORLD
-PRACTICE MAKES PERFECT
-"""
-
+#5. 
 v= input(" user input: ")
 b = v.upper()
 print(b)
@@ -84,12 +63,8 @@ def func_sum(x,y):
     print(sum)
 func_sum("2","3")
 
-"""
-7. Define a function that can accept two strings as input and print the string with maximum length in console.
-If two strings have the same length, then the function should print all strings line by line.
-"""
 
-
+#7. 
 def length_of_string(str1, str2):
     if len(str1)> len(str2):
         print(str1)
@@ -112,16 +87,8 @@ def func_tup(x,y):
 
 func_tup(2,20)
 
-"""
-9. Write a function called showNumbers that takes a parameter called limit.
-It should print all the numbers between 0 and limit with a label to identify the even and odd numbers.
-Example: If the limit is 3 , it should print:
-0 EVEN
-1 ODD
-2 EVEN
-3 ODD
-"""
 
+#9.
 def showNumbers(limit):
     for i in range(0,limit):
         if i%2==0:
@@ -144,12 +111,9 @@ def find_even(x,y):
 
 find_even(1,21)
 
-"""
-11.Write a program which can map() and filter() to make a list whose elements are square of even number in [1,2,3,4,5,6,7,8,9,10]
-Hints: Use map() to generate a list.
-Use filter() to filter elements of a list
-Use lambda to define anonymous functions
-"""
+
+#11.
+
 def fun_map_filter(d):
     l = list(filter(lambda x:x%2==0,d))
     j= list(map(lambda x:x*x,l))
